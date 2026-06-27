@@ -5,7 +5,7 @@ import datetime as dt
 
 import os
 user_name=os.environ.get("MY_EMAIL")
-pass_word=os.environ.get("MY_PASSWORD)
+pass_word=os.environ.get("MY_PASSWORD")
                          
 letters=["letter_templates/letter_1.txt","letter_templates/letter_2.txt","letter_templates/letter_3.txt"]
 df=pd.read_csv("birthdays.csv")
