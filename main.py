@@ -2,8 +2,10 @@ import random
 import smtplib
 import pandas as pd
 import datetime as dt
-user_name="debojidc@gmail.com"
-pass_word="btvixtuxpdkimyty"
+
+import os
+user_name=os.environ.get("MY_EMAIL")
+pass_word=os.environ.get("MY_PASSWORD)
 letters=["letter_templates/letter_1.txt","letter_templates/letter_2.txt","letter_templates/letter_3.txt"]
 df=pd.read_csv("birthdays.csv")
 bday_months=df["month"].to_list()
